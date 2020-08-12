@@ -1,7 +1,4 @@
-package CSBattleShip;//106
-
-import BattleShip.GameHelper;
-import BattleShip.SimpleDotCom;
+package BattleShip;
 
 public class SimpleDotComTestDrive {
 	public static void main(String[] args) {

@@ -1,6 +1,7 @@
-package CodeMagnets;//PAGE 43
+package SingleFileLessons;
 
 class DrumKit {
+
 	boolean topHat = true;
 	boolean snare = true;
 
@@ -14,15 +15,16 @@ class DrumKit {
 }
 
 public class DrumKitTestDrive {
-
 	public static void main(String[] args) {
+
 		DrumKit d = new DrumKit();
+
+		d.snare = false;
 		d.playSnare();
 		d.playTopHat();
-		d.snare = false;
+
 		if (d.snare == true) {
 			d.playSnare();
 		}
-
 	}
 }
