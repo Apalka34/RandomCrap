@@ -11,12 +11,12 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class RegistryHandler {
 	
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ExampleMod.MOD_ID);
-			
+	
 	public static void init() {
 		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-	}
+		}		
 	
 //	My Items
 	public static final RegistryObject<Item> Stupidity = ITEMS.register("Stupidity", ItemBase::new);
-
-}
+		
+	}
