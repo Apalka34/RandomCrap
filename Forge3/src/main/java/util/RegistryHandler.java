@@ -17,6 +17,6 @@ public class RegistryHandler {
 		}		
 	
 //	My Items
-	public static final RegistryObject<Item> Stupidity = ITEMS.register("Stupidity", ItemBase::new);
+	public static final RegistryObject<Item> Stupidity = ITEMS.register("stupidity", ItemBase::new);
 		
 	}
