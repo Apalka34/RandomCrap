@@ -1,6 +1,7 @@
 package com.example.examplemod;
 
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -30,4 +31,11 @@ public class ExampleMod
 
     private void doClientStuff(final FMLClientSetupEvent event) { }
     
+    public static final ItemGroup TAB = new ItemGroup("examplemodTab") {
+    	
+    	@Override
+    	public ItemStack createIcon() {
+    		return new ItemStack(RegistryHandler.Stupidity.get());
+    	}
+    };
 }
