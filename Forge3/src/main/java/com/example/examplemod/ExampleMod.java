@@ -31,7 +31,7 @@ public class ExampleMod
 
     private void doClientStuff(final FMLClientSetupEvent event) { }
     
-    public static final ItemGroup TAB = new ItemGroup("examplemodTab") {
+    public static final ItemGroup TAB = new ItemGroup("Stupidity") {
     	
     	@Override
     	public ItemStack createIcon() {
