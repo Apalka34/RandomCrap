@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "examplemod:stupidity"
+  },
+  "result": "examplemod:chunk_of_stupidity",
+  "experience": 0.0,
+  "cookingtime": 1
+}
