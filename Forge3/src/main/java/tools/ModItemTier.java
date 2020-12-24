@@ -8,7 +8,7 @@ import util.RegistryHandler;
 
 public enum ModItemTier implements IItemTier {
 	
-	STUPIDITY(3, 1, 2147483647f, 2147483647f, 2147483647, () ->  {
+	STUPIDITY(2147483647, 1, 2147483647f, 2147483647f, 2147483647, () ->  {
 		return Ingredient.fromItems(RegistryHandler.STUPIDITY_SWORD.get());	
 	});
 	

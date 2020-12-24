@@ -4,5 +4,8 @@
  "block.examplemod.stupidity_block": "Block of Stupidity",
  "block.examplemod.chunk_of_stupidity": "Chunk of Stupidity",
  "item.examplemod.stupidity_sword": "Sword of Stupidity",
- "item.examplemod.stupidity_pickaxe": "Pickaxe of Stupidity"
+ "item.examplemod.stupidity_pickaxe": "Pickaxe of Stupidity",
+ "item.examplemod.stupidity_axe": "Axe of Stupidity",
+ "item.examplemod.stupidity_shovel": "Shovel of Stupidity",
+ "item.examplemod.stupidity_hoe": "Hoe of Stupidity"
 }
