@@ -7,10 +7,12 @@ import blocks.ChunkOfStupidityBlock;
 import blocks.StupidityBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.SwordItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import tools.ModItemTier;
 
 public class RegistryHandler {
 	
@@ -22,8 +24,12 @@ public class RegistryHandler {
 		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
 		}		
 	
-//	My Items
+//	Items
 	public static final RegistryObject<Item> Stupidity = ITEMS.register("stupidity", ItemBase::new);
+	
+//	Tools
+	public static final RegistryObject<SwordItem> STUPIDITY_SWORD = ITEMS.register("stupidity_sword",
+			() -> new SwordItem(ModItemTier.STUPIDITY, 2147483647, +2147483647f, new Item.Properties().group(ExampleMod.TAB)));
 	
 //	Blocks
 	public static final RegistryObject<Block> STUPIDITY_BLOCK = BLOCKS.register("stupidity_block", StupidityBlock::new);
@@ -31,6 +37,7 @@ public class RegistryHandler {
 	
 //	Block Items
 	public static final RegistryObject<Item> STUPIDITY_BLOCK_ITEM = ITEMS.register("stupidity_block", () -> new BlockItemBase(STUPIDITY_BLOCK.get()));
-	public static final RegistryObject<Item> CHUNK_OF_STUPIDITY_ITEM = ITEMS.register("chunk_of_stupidity", () -> new BlockItemBase(CHUNK_OF_STUPIDITY.get()));
+	public static final RegistryObject<Item> CHUNK_OF_STUPIDITY_ITEM = ITEMS.register("chunk_of_stupidity",
+			() -> new BlockItemBase(CHUNK_OF_STUPIDITY.get()));
 	
 }
