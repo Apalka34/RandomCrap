@@ -7,6 +7,7 @@ import blocks.ChunkOfStupidityBlock;
 import blocks.StupidityBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.SwordItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -30,6 +31,8 @@ public class RegistryHandler {
 //	Tools
 	public static final RegistryObject<SwordItem> STUPIDITY_SWORD = ITEMS.register("stupidity_sword",
 			() -> new SwordItem(ModItemTier.STUPIDITY, 2147483647, +2147483647f, new Item.Properties().group(ExampleMod.TAB)));
+	public static final RegistryObject<PickaxeItem> STUPIDITY_PICKAXE = ITEMS.register("stupidity_pickaxe",
+			() -> new PickaxeItem(ModItemTier.STUPIDITY, 2147483647, +2147483647f, new Item.Properties().group(ExampleMod.TAB)));
 	
 //	Blocks
 	public static final RegistryObject<Block> STUPIDITY_BLOCK = BLOCKS.register("stupidity_block", StupidityBlock::new);

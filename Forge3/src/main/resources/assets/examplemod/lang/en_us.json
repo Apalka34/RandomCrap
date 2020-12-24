@@ -1,5 +1,8 @@
 {
  "item.examplemod.stupidity": "Stupidity",
+ "itemGroup.Stupidity": "Stupidity",
  "block.examplemod.stupidity_block": "Block of Stupidity",
- "itemGroup.examplemodTab": "Stupidity"
+ "block.examplemod.chunk_of_stupidity": "Chunk of Stupidity",
+ "item.examplemod.stupidity_sword": "Sword of Stupidity",
+ "item.examplemod.stupidity_pickaxe": "Pickaxe of Stupidity"
 }
