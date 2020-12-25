@@ -2,10 +2,13 @@
 
 import com.example.examplemod.ExampleMod;
 import Items.ItemBase;
+import armor.ModArmorMaterial;
 import blocks.BlockItemBase;
 import blocks.ChunkOfStupidityBlock;
 import blocks.StupidityBlock;
 import net.minecraft.block.Block;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
@@ -46,6 +49,19 @@ public class RegistryHandler {
 	
 	public static final RegistryObject<HoeItem> STUPIDITY_HOE = ITEMS.register("stupidity_hoe",
 			() -> new HoeItem(ModItemTier.STUPIDITY, 2147483647, +2147483647f, new Item.Properties().group(ExampleMod.TAB)));
+	
+//	Armor
+	public static final RegistryObject<ArmorItem> STUPIDITY_HELMET = ITEMS.register("stupidity_helmet", 
+			() -> new ArmorItem(ModArmorMaterial.STUPIDITY, EquipmentSlotType.HEAD, new Item.Properties().group(ExampleMod.TAB)));
+	
+	public static final RegistryObject<ArmorItem> STUPIDITY_CHESTPLATE = ITEMS.register("stupidity_chestplate", 
+			() -> new ArmorItem(ModArmorMaterial.STUPIDITY, EquipmentSlotType.CHEST, new Item.Properties().group(ExampleMod.TAB)));
+	
+	public static final RegistryObject<ArmorItem> STUPIDITY_LEGGINGS = ITEMS.register("stupidity_leggings", 
+			() -> new ArmorItem(ModArmorMaterial.STUPIDITY, EquipmentSlotType.LEGS, new Item.Properties().group(ExampleMod.TAB)));
+	
+	public static final RegistryObject<ArmorItem> STUPIDITY_BOOTS = ITEMS.register("stupidity_boots", 
+			() -> new ArmorItem(ModArmorMaterial.STUPIDITY, EquipmentSlotType.FEET, new Item.Properties().group(ExampleMod.TAB)));
 	
 //	Blocks
 	public static final RegistryObject<Block> STUPIDITY_BLOCK = BLOCKS.register("stupidity_block", StupidityBlock::new);
