@@ -7,5 +7,9 @@
  "item.examplemod.stupidity_pickaxe": "Pickaxe of Stupidity",
  "item.examplemod.stupidity_axe": "Axe of Stupidity",
  "item.examplemod.stupidity_shovel": "Shovel of Stupidity",
- "item.examplemod.stupidity_hoe": "Hoe of Stupidity"
+ "item.examplemod.stupidity_hoe": "Hoe of Stupidity",
+ "item.examplemod.stupidity_helmet": "Helmet of Stupidity",
+ "item.examplemod.stupidity_chestplate": "Chestplate of Stupidity",
+ "item.examplemod.stupidity_leggings": "Leggings of Stupidity",
+ "item.examplemod.stupidity_boots": "Boots of Stupidity"
 }
